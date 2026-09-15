@@ -1,0 +1,46 @@
+{
+  "model": "RandomForestClassifier",
+  "model_version": "diabetes-130us-rf-v3",
+  "python_version": "3.13.5",
+  "pandas_version": "2.2.3",
+  "numpy_version": "2.3.5",
+  "scikit_learn_version": "1.8.0",
+  "target": "readmitted == '<30'",
+  "dataset_rows": 101766,
+  "positive_rows": 11357,
+  "negative_rows": 90409,
+  "train_rows": 81412,
+  "test_rows": 20354,
+  "accuracy": 0.696718,
+  "precision": 0.174833,
+  "recall": 0.461911,
+  "f1": 0.253657,
+  "roc_auc": 0.643223,
+  "confusion_matrix": [
+    [
+      13132,
+      4951
+    ],
+    [
+      1222,
+      1049
+    ]
+  ],
+  "features": [
+    "age",
+    "time_in_hospital",
+    "num_lab_procedures",
+    "num_procedures",
+    "num_medications",
+    "number_outpatient",
+    "number_emergency",
+    "number_inpatient",
+    "number_diagnoses"
+  ],
+  "risk_bands": {
+    "Low": "<0.40",
+    "Medium": "0.40-0.69",
+    "High": ">=0.70"
+  },
+  "note": "Educational clinical decision-support model trained on the Diabetes 130-US Hospitals dataset. Accuracy is not a measure of clinical safety; predictions require clinician review and external validation before use."
+}
